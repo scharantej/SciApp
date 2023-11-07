@@ -1,0 +1,17 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Science App - Progress</title>
+</head>
+<body>
+<h1>Progress</h1>
+<ul>
+{% for progress in progress %}
+<li>{{ progress.topic.name }} - {{ progress.experiment.name }}</li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
