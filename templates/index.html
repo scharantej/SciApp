@@ -1,0 +1,18 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Science App</title>
+</head>
+<body>
+<h1>Science App</h1>
+<ul>
+{% for topic in topics %}
+<li><a href="/topic/{{ topic.id }}">{{ topic.name }}</a></li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
+
