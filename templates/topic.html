@@ -1,0 +1,20 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Science App - {{ topic.name }}</title>
+</head>
+<body>
+<h1>{{ topic.name }}</h1>
+<p>{{ topic.description }}</p>
+
+<ul>
+{% for experiment in experiments %}
+<li><a href="/experiment/{{ experiment.id }}">{{ experiment.name }}</a></li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
+
