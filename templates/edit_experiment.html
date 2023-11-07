@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Edit Experiment</title>
+</head>
+<body>
+<h1>Edit Experiment</h1>
+<form action="/edit_experiment/{{ experiment.id }}" method="post">
+<label for="title">Title:</label><br>
+<input type="text" id="title" name="title" value="{{ experiment.title }}"><br>
+<label for="description">Description:</label><br>
+<textarea id="description" name="description">{{ experiment.description }}</textarea><br><br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
+
