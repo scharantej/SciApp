@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Experiments</title>
+</head>
+<body>
+<h1>Experiments</h1>
+<ul>
+{% for experiment in experiments %}
+<li><a href="/experiments/{{ experiment.id }}">{{ experiment.title }}</a></li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
+
