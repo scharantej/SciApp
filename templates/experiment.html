@@ -1,0 +1,20 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Science App - {{ experiment.name }}</title>
+</head>
+<body>
+<h1>{{ experiment.name }}</h1>
+<p>{{ experiment.description }}</p>
+
+<form action="/add_progress" method="post">
+<input type="hidden" name="topic_id" value="{{ experiment.topic_id }}">
+<input type="hidden" name="experiment_id" value="{{ experiment.id }}">
+<input type="submit" value="Mark as complete">
+</form>
+</body>
+</html>
+
+
